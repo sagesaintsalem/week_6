@@ -37,7 +37,7 @@ Traveller.prototype.getUniqueModesOfTransport = function () {
   const transportMethods = this.journeys.map((journey) => {
     return journey.transport; 
   });
-  
+  return Array.from(new Set(transportMethods));
 };
 
 
